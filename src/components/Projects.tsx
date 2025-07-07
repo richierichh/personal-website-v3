@@ -3,7 +3,7 @@ import React from 'react';
 const projects = [
   {
     title: 'Workday Product Case Study',
-    description: 'Improvements to Workday',
+    description: 'In progress:Improvements to Workday',
     link: 'https://yourprojectlink.com',
   },
   {
