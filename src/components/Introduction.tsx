@@ -32,7 +32,7 @@ const Introduction = () => {
             <img
               src="/profile.jpg"
               alt="Richard Liao"
-              className="rounded-full h-32 w-32 sm:h-24 sm:w-24 md:h-24 md:w-24 lg:h-32 lg:w-32 xl:h-40 xl:w-40 object-cover object-center scale-150 -translate-y-4"
+              className="rounded-full h-32 w-32 sm:h-24 sm:w-24 md:h-24 md:w-24 lg:h-40 lg:w-40 xl:h-56 xl:w-56 2xl:h-72 2xl:w-72 object-cover object-center scale-150 -translate-y-4"
             />
           </div>
           
