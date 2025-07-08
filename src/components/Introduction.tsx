@@ -13,19 +13,20 @@ const Introduction = () => {
     <section id="introduction" className="min-h-screen flex items-center justify-center section-padding pt-32">
       <div className="max-content-width text-center">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light tracking-tight mb-14 leading-none">
-            Hello 👋, my name is {' '}
-            <span className="font-normal">
-              <Typewriter
-                words={["Richard Liao"]}
-                typeSpeed={80}
-                deleteSpeed={50}
-                cursor
-                cursorStyle="|"
-                loop={1}
-              />
-            </span>
-          </h1>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-14 leading-none whitespace-nowrap">
+    Hello 👋, my name is <span className="font-normal">
+      <Typewriter
+        words={["Richard Liao"]}
+        typeSpeed={80}
+        deleteSpeed={50}
+        cursor
+        cursorStyle="|"
+        loop={1}
+      />
+    </span>
+  </h1>
+
+
           
           <div className="flex justify-center mb-12">
             <img
