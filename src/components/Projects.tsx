@@ -8,7 +8,7 @@ const projects = [
   },
   {
     title: 'Signature Pro',
-    description: 'Another project description.',
+    description: 'Create your own signature and sign documents with ease',
     link: 'https://yourprojectlink.com',
   },
   {
