@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -16,11 +17,13 @@ const projects = [
     title: 'Pantry Tracker',
     description: 'Track food inventory and generate recipes based on pantry items.',
     link: 'https://pantry.richieliao.com', // replace with your actual link
+    github: 'https://github.com/yourusername/pantry-tracker', // replace with actual GitHub link
   },
   {
     title: 'Ecommerce Web App',
     description: 'Ecommerce app with shopping cart and AlanAI voice assistant.',
     link: 'https://ecommerce.richieliao.com', // replace with your actual link
+    github: 'https://github.com/yourusername/ecommerce-app', // replace with actual GitHub link
   },
 ];
 
@@ -48,12 +51,24 @@ const Projects = () => {
               <div key={idx} className="p-8 border rounded-lg bg-white dark:bg-gray-50 shadow-sm">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-muted-foreground">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                <button
-                  onClick={() => handleProjectClick(project.link)}
-                  className="text-blue-600 hover:underline"
-                >
-                  View Project
-                </button>
+                <div className="flex items-center gap-4">
+                  <button
+                    onClick={() => handleProjectClick(project.link)}
+                    className="text-blue-600 hover:underline"
+                  >
+                    View Project
+                  </button>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                    >
+                      <FaGithub className="w-5 h-5" />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
