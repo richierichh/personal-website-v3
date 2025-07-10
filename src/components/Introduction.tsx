@@ -11,27 +11,29 @@ const Introduction = () => {
 
   return (
     <section id="introduction" className="min-h-screen flex items-center justify-center section-padding pt-32">
-      <div className="max-content-width text-center">
-        <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-10 leading-none whitespace-nowrap">
-    Hello 👋, my name is <span className="font-normal">
-      <Typewriter
-        words={["Richard Liao"]}
-        typeSpeed={80}
-        deleteSpeed={50}
-        cursor
-        cursorStyle="|"
-        loop={1}
-      />
-   <div className="flex justify-center pt-28">
-    <img
-      src="/profile.jpg"
-      alt="Richard Liao"
-      className="rounded-full h-32 w-32 sm:h-24 sm:w-24 md:h-24 md:w-24 lg:h-40 lg:w-40 xl:h-56 xl:w-56 2xl:h-72 2xl:w-72 object-cover object-center scale-150 -translate-y-4"
-    />
-  </div>
-    </span>
-  </h1>
+      <div className="max-content-width text-center flex flex-col items-center">
+        <div className="animate-fade-in w-full flex flex-col items-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6 leading-none">
+            Hello 👋, my name is{' '}
+            <span className="font-normal">
+              <Typewriter
+                words={["Richard Liao"]}
+                typeSpeed={80}
+                deleteSpeed={50}
+                cursor
+                cursorStyle="|"
+                loop={1}
+              />
+            </span>
+          </h1>
+          {/* Profile Image - now below the name */}
+          <div className="flex justify-center pt-4 pb-8 w-full">
+            <img
+              src="/profile.jpg"
+              alt="Richard Liao"
+              className="rounded-full h-40 w-40 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-56 lg:w-56 xl:h-72 xl:w-72 2xl:h-80 2xl:w-80 object-cover object-center"
+            />
+          </div>
 
           
           <div className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed mb-10 max-w-4xl mx-auto">
