@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -14,7 +12,7 @@ const Introduction = () => {
       <div className="max-content-width text-center flex flex-col items-center">
         <div className="animate-fade-in w-full flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6 leading-none">
-            Hello 👋, my name is{' '}
+            Hello 👋, my name is{' '} 
             <span className="font-normal">
               <Typewriter
                 words={["Richard Liao"]}

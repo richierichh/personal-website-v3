@@ -177,9 +177,7 @@ export default function ProjectWorkday() {
                     <span className="text-xs text-gray-600 text-center">Indeed</span>
                   </div>
                   <div className="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
-                    <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-2">
-                      <span className="text-white font-bold text-sm">LV</span>
-                    </div>
+                  <img src="/lever.webp" alt="lever Logo" className="w-12 h-12 object-contain mb-2 rounded" /> 
                     <span className="text-xs text-gray-600 text-center">Lever</span>
                   </div>
                 </div>
