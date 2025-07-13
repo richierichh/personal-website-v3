@@ -80,6 +80,17 @@ const Experience = () => {
         "Architected and deployed nightly ETL jobs in C# and ASP.NET that loaded 1 million+ records across 7 Oracle databases cutting refresh time from 6 hours to 25 minutes (93% faster)",
         "Consolidated 12 GB of financial transactions into a new Oracle schema embedding validation rules that eliminated 30% of null or duplicate rows"
       ]
+    },
+    {
+      title: "Analyst Intern",
+      company: "Markel",
+      location: "Toronto, ON",
+      period: "May 2022 - September 2022",
+      website: "https://www.markel.ca/",
+      description: "",
+      responsibilities: [
+        "Verified and renewed hundreds of accounts ensuring financials, premiums, and broker information were accurate using Microsoft Access and Excel","Prepared 250+ financial rater templates in Microsoft Excel based on past financial history and risk projections", "Issued 100+ new accounts in Websure for new businesses to assist for underwriter quotation","Created 100+ decline accounts in Websure for different niche product and high-risk businesses", "Overall improved the efficiency of workload in the underwriting process and made it faster by 20%"
+      ]
     }
   ];
 

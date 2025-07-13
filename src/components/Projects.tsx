@@ -23,7 +23,7 @@ const projects = [
     link: 'https://pantry.richieliao.com',
     github: 'https://github.com/richierichh/pantry-tracker',
     tags: ['JavaScript', 'React', 'FireBase', 'OpenAI API'],
-    image: '/pantry tracker.png', // Example, update as needed
+    image: '/pantry tracker.png', 
   },
   {
     title: 'AlanAI Ecommerce Web App',
@@ -31,7 +31,7 @@ const projects = [
     link: 'https://ecommerce.richieliao.com',
     github: 'https://github.com/richierichh/AlanAI-Ecommerce-App',
     tags: ['JavaScript', 'React','AlanAI API'],
-    image: '/AlanAI Picture.png', // Example, update as needed
+    image: '/AlanAI Picture.png', 
   },
 ];
 
