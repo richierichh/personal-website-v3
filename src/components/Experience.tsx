@@ -11,8 +11,7 @@ const Experience = () => {
       website: "https://www.wlu.ca/",
       description: "",
       responsibilities: [
-        "Processing geospatial and socioeconomic data to evaluate site suitability for new EV charging stations using Python, Pandas, NumPy and feature-based learning",
-        "Developed a cost optimization model that reduced projected infrastructure costs by 22% while increasing grid accessibility coverage by 35% across 3 high-traffic regions in the York Region"
+        "Built geospatial ML models to identify optimal EV charging station sites, reducing infrastructure costs by 22% and boosting grid accessibility by 35%"
       ]
     },
     {
@@ -23,9 +22,7 @@ const Experience = () => {
       website: "https://www.citamarketplace.com/",
       description: "",
       responsibilities: [
-        "Led end-to-end feature prioritization and backlog management, accelerating product delivery cycles by 20%",
-        "Leveraged in-depth user behavior analysis and data-driven insights to streamline checkout flows, increasing successful conversions by 15% and reducing customer support inquiries by 10%",
-        "Wrote detailed user stories and acceptance criteria while leading sprint planning and backlog grooming sessions, accelerating delivery timelines ensuring alignment with product vision"
+        "Led feature prioritization and sprint planning, improving product delivery by 20% and optimizing checkout UX to increase conversions by 15%"
       ]
     },
     {
@@ -36,10 +33,7 @@ const Experience = () => {
       website: "https://www.dayforce.com/",
       description: "",
       responsibilities: [
-        "Diagnosed and resolved critical backend bugs, minimizing downtime for 5000+ companies and enhancing performance for 3.5 million+ daily users",
-        "Developed 10+ test automation scripts by migrating from the legacy FitNesse framework to SpecFlow using C# and Selenium increasing test coverage by 15%",
-        "Validated REST APIs for backend services using Postman, debugged and fixed data inconsistencies that led to a 25% reduction in failed requests and improved overall reliability",
-        "Directed QA processes across manual and automated testing using React, C#.NET, and SQL achieving a 90% reduction in user-reported issues"
+        "Resolved backend bugs impacting 3.5M+ users, built automation tests to increase coverage by 15%, and led QA efforts to reduce user issues by 90%"
       ]
     },
     {
@@ -50,11 +44,7 @@ const Experience = () => {
       website: "https://cibccm.com/",
       description: "",
       responsibilities: [
-        "Developed an NLP AI chatbot using Python, SpaCy and SQL to interpret financial prompts and execute correlated SQL queries for fixed income bonds improving data retrieval efficiency",
-        "Automated trade report generation from Oracle database to Excel reducing processing time by 4+ hours weekly",
-        "Led user research within a cross-functional team to refine product strategy & roadmap, and optimized an ML model that accurately extracted currencies and time frames for SQL querying",
-        "Organized and managed large-scale trading data (10,000+ securities) using SQL and created VLOOKUPs in Excel optimizing data accessibility for analysts",
-        "Utilized Confluence to document the NLP AI Chatbot’s architecture, entity extraction flow and SQL query generation logic enabling seamless knowledge transfer across engineering and product teams"
+        "Developed an NLP chatbot using Python and SpaCy for SQL automation, cutting manual work weekly, and optimized data workflows across 10,000+ bond securities"
       ]
     },
     {
@@ -65,8 +55,7 @@ const Experience = () => {
       website: "https://www.civiconnect.ca/",
       description: "",
       responsibilities: [
-        "Led a team of developers and designers to design, build, and deploy two responsive websites for businesses using JavaScript, React, and Figma improving user engagement by 50%",
-        "Integrated Strapi with a Node.js backend as a content management system and deployed it on AWS ensuring stakeholders are able to easily update content"
+        "Led development of two responsive websites using React and Strapi CMS, improving business user engagement by 50%"
       ]
     },
     {
@@ -77,8 +66,7 @@ const Experience = () => {
       website: "https://www.ontario.ca/page/ministry-public-and-business-service-delivery-and-procurement",
       description: "",
       responsibilities: [
-        "Architected and deployed nightly ETL jobs in C# and ASP.NET that loaded 1 million+ records across 7 Oracle databases cutting refresh time from 6 hours to 25 minutes (93% faster)",
-        "Consolidated 12 GB of financial transactions into a new Oracle schema embedding validation rules that eliminated 30% of null or duplicate rows"
+        "Engineered high-speed ETL pipelines to process 1M+ records across 7 databases, reducing refresh time by 93% and improving data quality"
       ]
     },
     {
@@ -89,7 +77,7 @@ const Experience = () => {
       website: "https://www.markel.ca/",
       description: "",
       responsibilities: [
-        "Verified and renewed hundreds of accounts ensuring financials, premiums, and broker information were accurate using Microsoft Access and Excel","Prepared 250+ financial rater templates in Microsoft Excel based on past financial history and risk projections", "Issued 100+ new accounts in Websure for new businesses to assist for underwriter quotation","Created 100+ decline accounts in Websure for different niche product and high-risk businesses", "Overall improved the efficiency of workload in the underwriting process and made it faster by 20%"
+        "Managed 450+ financial accounts and templates, streamlining underwriting operations and accelerating workload efficiency by 20%"
       ]
     }
   ];
