@@ -14,38 +14,42 @@ const projects = [
     title: 'Signature Pro',
     description: 'Create a unique personalized signature and securely sign PDF documents in seconds',
     link: 'https://classy-sign-forge.vercel.app/auth',
-    tags: ['React','SupaBase'],
-    image: '/Signature Picture.png', 
+    tags: ['React', 'SupaBase'],
+    image: '/Signature Picture.png',
   },
   {
     title: 'Pantry Tracker',
     description: 'Pantry tracker that lets users manage food inventory and automatically generates recipes based on available ingredients',
-    link: 'https://pantry.richieliao.com',
+    link: '',
     github: 'https://github.com/richierichh/pantry-tracker',
-    tags: ['JavaScript', 'React', 'FireBase', 'OpenAI API'],
-    image: '/pantry tracker.png', 
+    tags: ['React', 'FireBase', 'OpenAI API'],
+    image: '/pantry tracker.png',
+    video: '/Pantry Tracker Demo.mp4',
   },
   {
     title: 'AlanAI Ecommerce Web App',
     description: 'Simple Ecommerce app integrated with AlanAI that allows user to add, remove and checkout items using their voice',
-    link: 'https://ecommerce.richieliao.com',
+    link: '',
     github: 'https://github.com/richierichh/AlanAI-Ecommerce-App',
-    tags: ['JavaScript', 'React','AlanAI API'],
-    image: '/AlanAI Picture.png', 
+    tags: ['React', 'AlanAI API'],
+    image: '/AlanAI Picture.png',
+    video: '/AlanAI Demo.mp4',
   },
 ];
 
 const Projects = () => {
   const navigate = useNavigate();
   const [showVideo, setShowVideo] = useState(false);
+  const [videoSrc, setVideoSrc] = useState('');
 
-  const handleProjectClick = (projectLink, projectTitle) => {
-    if (projectTitle === 'AlanAI Ecommerce Web App') {
+  const handleProjectClick = (project) => () => {
+    if (project.video) {
+      setVideoSrc(project.video);
       setShowVideo(true);
-    } else if (projectLink.startsWith('/')) {
-      navigate(projectLink); // internal route
-    } else {
-      window.open(projectLink, '_blank'); // external link
+    } else if (project.link?.startsWith('/')) {
+      navigate(project.link);
+    } else if (project.link) {
+      window.open(project.link, '_blank');
     }
   };
 
@@ -53,15 +57,14 @@ const Projects = () => {
     <section id="projects" className="py-32 section-padding bg-gray-50 dark:bg-[#141414] dark:text-white">
       <div className="max-content-width">
         <div className="animate-fade-in">
-          <h2 className="text-4xl md:text-6xl font-light tracking-tight mb-20 leading-tight">
-            Projects
-          </h2>
+          <h2 className="text-4xl md:text-6xl font-light tracking-tight mb-20 leading-tight">Projects</h2>
+
           <div className="grid md:grid-cols-2 gap-16">
             {projects.map((project, idx) => (
               <div key={idx} className="p-8 border rounded-lg bg-white dark:bg-gray-50 shadow-sm">
                 <h3 className="text-2xl font-semibold mb-4 dark:text-muted-foreground">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                {/* Render tags if present */}
+
                 {project.tags && (
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIdx) => (
@@ -74,33 +77,23 @@ const Projects = () => {
                     ))}
                   </div>
                 )}
-                {/* Render image if present */}
+
                 {project.image && (
                   <div className="mb-4 flex justify-center">
-                    {/* If the image is an mp4, render a video thumbnail, else render an img */}
-                    {project.image.endsWith('.mp4') ? (
-                      <video
-                        src={project.image}
-                        className="rounded-lg max-h-48 w-auto border"
-                        controls={false}
-                        muted
-                        autoPlay={false}
-                        preload="metadata"
-                        poster="/placeholder.svg"
-                      />
-                    ) : (
-                      <img
-                        src={project.image}
-                        alt={project.title + ' preview'}
-                        className="rounded-lg max-h-48 w-auto border"
-                      />
-                    )}
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      className="rounded-lg max-h-48 w-auto border"
+                      loading="lazy"
+                    />
                   </div>
                 )}
+
                 <div className="flex items-center gap-4">
                   <button
-                    onClick={() => handleProjectClick(project.link, project.title)}
+                    onClick={handleProjectClick(project)}
                     className="text-blue-600 hover:underline"
+                    aria-label={`View ${project.title}`}
                   >
                     View Project
                   </button>
@@ -110,6 +103,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                      aria-label={`View ${project.title} on GitHub`}
                     >
                       <FaGithub className="w-5 h-5" />
                     </a>
@@ -120,6 +114,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
       {/* Video Modal */}
       {showVideo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
@@ -132,7 +127,7 @@ const Projects = () => {
               &times;
             </button>
             <video
-              src="/AlanAI Demo.mp4"
+              src={videoSrc}
               controls
               autoPlay
               className="rounded-xl w-full h-auto mt-2"
