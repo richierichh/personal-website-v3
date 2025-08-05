@@ -37,7 +37,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "Business Analyst Intern",
+      title: "Software Engineer Intern",
       company: "CIBC Capital Markets",
       location: "Toronto, ON",
       period: "September 2023 - December 2023",
