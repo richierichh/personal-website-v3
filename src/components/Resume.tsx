@@ -16,10 +16,10 @@ const Resume = () => {
                 <div>
                   <div className="text-lg font-medium">Honours Bachelor of Science in Computer Science</div>
                   <div className="text-muted-foreground">Wilfrid Laurier University</div>
-                  <div className="text-sm text-muted-foreground mt-1">September 2020 - April 2025</div>
+                  <div className="text-sm text-muted-foreground mt-1">September 2020 - June 2025</div>
                   <div className="text-lg font-medium">Masters of Science in Computer Science</div>
                   <div className="text-muted-foreground">Georgia Institute of Technology</div>
-                  <div className="text-sm text-muted-foreground mt-1">Expected Aug 2027</div>
+                  <div className="text-sm text-muted-foreground mt-1">Expected May 2027</div>
                 </div>
                 
               </div>
