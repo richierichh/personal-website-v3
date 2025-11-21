@@ -12,7 +12,7 @@ const Introduction = () => {
       <div className="max-content-width text-center flex flex-col items-center">
         <div className="animate-fade-in w-full flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-tight mb-6 leading-none">
-            Hello 👋, my name is{' '} 
+            Hello 👋, my name is{' '}
             <span className="font-normal">
               <Typewriter
                 words={["Richard Liao"]}
@@ -24,7 +24,8 @@ const Introduction = () => {
               />
             </span>
           </h1>
-          {/* Profile Image - now below the name */}
+
+          {/* Profile Image */}
           <div className="flex justify-center pt-4 pb-8 w-full">
             <img
               src="/profile.jpg"
@@ -33,15 +34,12 @@ const Introduction = () => {
             />
           </div>
 
-          
           <div className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed mb-10 max-w-4xl mx-auto">
-            Software Engineer 
-            <p>
-              Product Manager
-            </p>
+            Product Manager
+            <p>Software Engineer</p>
           </div>
-          
-          
+
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
             <a
               href="mailto:liaorichard221@gmail.com"
@@ -49,17 +47,19 @@ const Introduction = () => {
             >
               Contact Me
             </a>
+
             <a
-              href="/Richard Liao PM Resume.pdf"
-              download
+              href="https://www.linkedin.com/in/richard-pierre-liao/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 border border-gray-300 text-sm font-medium hover:border-gray-400 transition-colors duration-200 text-center"
             >
-              Download Resume
+              LinkedIn
             </a>
           </div>
         </div>
-        
-        <button 
+
+        <button
           onClick={scrollToNext}
           className="animate-bounce hover:animate-none transition-all duration-300 hover:text-black"
         >

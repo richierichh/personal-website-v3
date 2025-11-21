@@ -4,6 +4,17 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
     {
+      title: "Product Management Intern",
+      company: "Simplii Financial - CIBC",
+      location: "Toronto, ON",
+      period: "January 2026 - April 2026",
+      website: "https://www.simplii.com",
+      description: "",
+      responsibilities: [
+        "Working on Simplii Financial's digital banking platform to improve the product and user experience"
+      ]
+    },
+    {
       title: "Machine Learning Researcher",
       company: "Wilfrid Laurier University",
       location: "Waterloo, ON",
@@ -15,17 +26,6 @@ const Experience = () => {
       ]
     },
     {
-      title: "Product Manager Intern",
-      company: "Cita Marketplace",
-      location: "Remote",
-      period: "September 2024 - December 2024",
-      website: "https://www.citamarketplace.com/",
-      description: "",
-      responsibilities: [
-        "Led feature prioritization and sprint planning, improving product delivery by 20% and optimizing checkout UX to increase conversions by 15%"
-      ]
-    },
-    {
       title: "Software Engineer Intern",
       company: "Dayforce",
       location: "Toronto, ON",
@@ -33,13 +33,13 @@ const Experience = () => {
       website: "https://www.dayforce.com/",
       description: "",
       responsibilities: [
-        "Resolved backend bugs impacting 3.5M+ users, built automation tests to increase coverage by 15%, and led QA efforts to reduce user issues by 90%"
+        "Resolved backend bugs impacting 7+ million users, built automation tests to increase coverage by 15%, and led QA efforts to reduce user issues by 90%"
       ]
     },
     {
-      title: "Software Engineer Intern",
+      title: "Business Systems Analyst Intern",
       company: "CIBC Capital Markets",
-      location: "Toronto, ON",
+      location: "Toronto, ON",  
       period: "September 2023 - December 2023",
       website: "https://cibccm.com/",
       description: "",
