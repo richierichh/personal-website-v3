@@ -13,10 +13,10 @@ const About = () => {
             
             <div className="space-y-8 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <p>
-              Hi! I&apos;m Richard, a Masters student at Georgia Institute of Technology with a passion for building impactful products that improve people&apos;s lives. I’m actively seeking for opportunities in product management or software engineering.
+              Hi! I&apos;m Richard, a Masters student at Georgia Tech with a passion for building impactful products that improve people&apos;s lives. I’m actively seeking for opportunities in product management or software engineering.
               </p>
               <p> 
-              I am currently working as a Product Management Intern at Simplii Financial, where I am product development and expansion initiatives across Simplii’s digital banking platform. Previously I worked as a Software Engineer at Dayforce, where I contributed to migrating a legacy test automation framework to a modern framework called SpecFlow. 
+              I am currently working as a Product Management Intern at Simplii Financial, where I am working on product development and expansion initiatives across Simplii's digital banking platform. Previously I worked as a Software Engineer at Dayforce, where I contributed to migrating a legacy test automation framework to a modern framework called SpecFlow. 
               </p>
               <p>
                 I am a dedicated and adaptable individual with a passion for building products that are both meaningful and user-friendly. I am always looking for new challenges and opportunities to grow. Lets connect! 
