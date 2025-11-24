@@ -14,11 +14,11 @@ const Resume = () => {
               <h3 className="text-xl font-medium mb-8 text-muted-foreground">Education</h3>
               <div className="space-y-6">
                 <div>
-                <div className="text-lg font-medium">Masters of Science in Computer Science</div>
-                  <div className="text-muted-foreground">Georgia Institute of Technology</div>
+                <div className="text-lg font-medium">Georgia Institute of Technology</div>
+                  <div className="text-muted-foreground"> Masters of Science in Computer Science - Specialization in Human Computer Interaction & AI</div>
                   <div className="text-sm text-muted-foreground mt-1">Expected May 2027</div>
-                  <div className="text-lg font-medium">Honours Bachelor of Science in Computer Science</div>
-                  <div className="text-muted-foreground">Wilfrid Laurier University</div>
+                  <div className="text-lg font-medium">Wilfrid Laurier University </div>
+                  <div className="text-muted-foreground">Honours Bachelor of Science in Computer Science - Specialization in Big Data</div>
                   <div className="text-sm text-muted-foreground mt-1">September 2020 - June 2025</div>
                 </div>
                 
