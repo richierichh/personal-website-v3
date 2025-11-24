@@ -16,6 +16,13 @@ export default function ProjectWorkday() {
   const isHome = window.location.pathname === '/';
   const location = useLocation();
 
+  const scrollToPrototype = () => {
+    const el = document.getElementById('prototype');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.replace('#', '');
@@ -45,7 +52,10 @@ export default function ProjectWorkday() {
             />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            <button
+              className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+              onClick={scrollToPrototype}
+            >
               View Prototype
             </button>
             <button className="border border-gray-300 text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors">
@@ -61,6 +71,8 @@ export default function ProjectWorkday() {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-6 pb-20">
         <div className="space-y-20">
+
+          {/* Overview */}
           <section>
             <SectionTitle title="Overview" />
             <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
@@ -70,6 +82,7 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* My Role */}
           <section>
             <SectionTitle title="My Role" />
             <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
@@ -80,6 +93,7 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Skills */}
           <section>
             <SectionTitle title="Skills Applied" />
             <div className="grid md:grid-cols-2 gap-6">
@@ -94,7 +108,7 @@ export default function ProjectWorkday() {
               ].map((skill, index) => (
                 <div
                   key={index}
-                  className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow"
+                  className="bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                 >
                   <span className="text-gray-800 font-medium">{skill}</span>
                 </div>
@@ -102,6 +116,7 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Background */}
           <section>
             <SectionTitle title="Background" />
             <div className="prose prose-lg max-w-none">
@@ -111,6 +126,7 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Problem Statement */}
           <section>
             <SectionTitle title="Problem Statement" />
             <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 md:p-12 text-white shadow-lg">
@@ -120,10 +136,11 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Research Process */}
           <section>
             <SectionTitle title="Research Process" />
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                   <span className="text-blue-600 mr-2">📊</span>
                   User Surveys
@@ -153,7 +170,9 @@ export default function ProjectWorkday() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+
+              {/* Competitive Research */}
+              <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                   <span className="text-green-600 mr-2">🔍</span>
                   Competitive Research
@@ -161,7 +180,6 @@ export default function ProjectWorkday() {
                 <p className="text-gray-600 mb-4">
                   Researched competitors including LinkedIn Easy Apply, Greenhouse, Indeed, and Lever.
                 </p>
-                
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                   <div className="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
@@ -177,11 +195,11 @@ export default function ProjectWorkday() {
                     <span className="text-xs text-gray-600 text-center">Indeed</span>
                   </div>
                   <div className="flex flex-col items-center p-3 bg-gray-50 rounded-lg">
-                  <img src="/lever.webp" alt="lever Logo" className="w-12 h-12 object-contain mb-2 rounded" /> 
+                    <img src="/lever.webp" alt="lever Logo" className="w-12 h-12 object-contain mb-2 rounded" />
                     <span className="text-xs text-gray-600 text-center">Lever</span>
                   </div>
                 </div>
-                
+
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-gray-700">
                     <strong>Key findings:</strong> All competitors had similarities such as updated modern UI, minimal data entry, a one page job application, and overall a seamless user experience compared to Workday.
@@ -189,7 +207,7 @@ export default function ProjectWorkday() {
                 </div>
               </div>
             </div>
-            
+
             {/* Research Images */}
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="flex flex-col items-center">
@@ -219,24 +237,25 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Problem Framing */}
           <section>
             <SectionTitle title="Problem Framing" />
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center p-8">
+              <div className="text-center p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">👤</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">User Goal</h3>
                 <p className="text-gray-600">Apply to jobs quickly, confidently, and with minimal redundancy.</p>
               </div>
-              <div className="text-center p-8">
+              <div className="text-center p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🏢</span>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Business Goal</h3>
                 <p className="text-gray-600">Increase completed applications and maintain data consistency.</p>
               </div>
-              <div className="text-center p-8">
+              <div className="text-center p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">💡</span>
                 </div>
@@ -248,6 +267,7 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Opportunities Matrix */}
           <section>
             <SectionTitle title="Opportunities Matrix" />
             <div className="bg-white border border-gray-200 rounded-2xl p-6 overflow-x-auto">
@@ -261,7 +281,7 @@ export default function ProjectWorkday() {
                   </tr>
                 </thead>
                 <tbody className="text-gray-700">
-                  <tr className="border-b border-gray-100">
+                  <tr className="border-b border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                     <td className="p-4">Updated UI with Seamless redirect + Profile creation with resume info</td>
                     <td className="p-4">Reduces time spent applying to jobs and reduces drop off rate</td>
                     <td className="p-4">
@@ -275,7 +295,7 @@ export default function ProjectWorkday() {
                       </span>
                     </td>
                   </tr>
-                  <tr className="border-b border-gray-100">
+                  <tr className="border-b border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                     <td className="p-4">Application progress tracker with notifications</td>
                     <td className="p-4">Decreases uncertainty with text/email notifications</td>
                     <td className="p-4">
@@ -289,7 +309,7 @@ export default function ProjectWorkday() {
                       </span>
                     </td>
                   </tr>
-                  <tr>
+                  <tr className="transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                     <td className="p-4">One click batch apply</td>
                     <td className="p-4">Reduces time spent applying to jobs</td>
                     <td className="p-4">
@@ -306,6 +326,7 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
+          {/* Improved User Flow */}
           <section>
             <SectionTitle title="Improved User Flow" />
             <div className="space-y-6">
@@ -316,7 +337,10 @@ export default function ProjectWorkday() {
                 "Confirm & Submit",
                 "Receive confirmation email",
               ].map((step, index) => (
-                <div key={index} className="flex items-center space-x-6 bg-white border border-gray-200 rounded-xl p-6">
+                <div
+                  key={index}
+                  className="flex items-center space-x-6 bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                >
                   <div className="bg-gray-900 text-white rounded-full w-10 h-10 flex items-center justify-center font-semibold text-sm flex-shrink-0">
                     {index + 1}
                   </div>
@@ -326,15 +350,87 @@ export default function ProjectWorkday() {
             </div>
           </section>
 
-          <section>
+          {/* Prototype Section */}
+          <section id="prototype">
             <SectionTitle title="Prototype" />
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 overflow-x-auto">
-              <p>
-                coming soon 
-              </p>
-              <img src="/UserFlow.png" alt="User Flow" className="w-full h-auto object-contain rounded-xl shadow-md hover:shadow-lg transition-shadow" />
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 overflow-hidden shadow-sm hover:shadow-md transition-all">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div className="flex flex-col items-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <div className="w-full rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <img
+                      src="/Workday Prototype 1.png"
+                      alt="Workday Prototype 1"
+                      className="w-full h-[34rem] object-cover object-top"
+                    />
+                  </div>
+                  <p className="mt-4 text-base text-gray-800 font-semibold">
+                    Autofill from Resume
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <div className="w-full rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <img
+                      src="/Workday Prototype 2.png"
+                      alt="Workday Prototype 2"
+                      className="w-full h-[34rem] object-contain"
+                    />
+                  </div>
+                  <p className="mt-4 text-base text-gray-800 font-semibold">
+                    One-Click Apply Using Workday Profile
+                  </p>
+                </div>
+
+              </div>
             </div>
           </section>
+
+          {/* Pain Points Section */}
+          <section>
+            <SectionTitle title="How It Solves User Pain Points" />
+
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all">
+
+              <div className="grid md:grid-cols-2 gap-6">
+
+                <div className="p-4 rounded-xl border border-gray-100 bg-gray-50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <h3 className="font-semibold text-lg mb-2">1. Smart Resume Parsing</h3>
+                  <p className="text-gray-600">
+                    The system fully parses the user’s resume and autofills only the required fields, reducing manual input
+                    and preventing duplicated information entry.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl border border-gray-100 bg-gray-50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <h3 className="font-semibold text-lg mb-2">2. Seamless Editing</h3>
+                  <p className="text-gray-600">
+                    Users can review and edit any section instantly without using the back button or navigating
+                    through multiple pages, improving the clarity and control of the application flow.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl border border-gray-100 bg-gray-50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <h3 className="font-semibold text-lg mb-2">3. One-Click Apply</h3>
+                  <p className="text-gray-600">
+                    Information autofills immediately, allowing users to confirm their details and submit the
+                    application in one click—speeding up the process and reducing friction.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-xl border border-gray-100 bg-gray-50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+                  <h3 className="font-semibold text-lg mb-2">4. Modern Updated UI</h3>
+                  <p className="text-gray-600">
+                    The redesigned interface provides a cleaner, more intuitive experience with clearer navigation,
+                    improved layout, and smoother interactions for applicants.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
         </div>
       </div>
     </div>

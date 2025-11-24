@@ -1,5 +1,3 @@
-
-import React from 'react';
 import Header from '@/components/Header';
 import Introduction from '@/components/Introduction';
 import About from '@/components/About';
@@ -19,7 +17,7 @@ const Index = () => {
         <About />
         <Experience />
         <Projects />
-        <Skills />
+        *{/* <Skills /> */}
         <Resume />
       </main>
       
