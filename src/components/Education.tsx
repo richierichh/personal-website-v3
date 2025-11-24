@@ -1,17 +1,16 @@
 import { Download } from 'lucide-react';
 
-const Resume = () => {
+const Education = () => {
   return (
-    <section id="resume" className="py-32 section-padding bg-gray-50 dark:bg-[#141414] dark:text-white">
+    <section id="Education" className="py-32 section-padding bg-gray-50 dark:bg-[#141414] dark:text-white">
       <div className="max-content-width">
         <div className="animate-fade-in">
           <h2 className="text-4xl md:text-6xl font-light tracking-tight mb-20 leading-tight">
-            Resume
+            Education
           </h2>
           
           <div className="grid md:grid-cols-2 gap-16 mb-20">
             <div>
-              <h3 className="text-xl font-medium mb-8 text-muted-foreground">Education</h3>
               <div className="space-y-6">
                 <div>
                 <div className="text-lg font-medium">Georgia Institute of Technology</div>
@@ -61,4 +60,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Education;

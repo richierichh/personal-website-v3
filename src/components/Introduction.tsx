@@ -42,7 +42,7 @@ const Introduction = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
             <a
-              href="mailto:liaorichard221@gmail.com"
+              href="mailto:richardliaocareers@gmail.com"
               className="px-8 py-4 bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors duration-200 text-center"
             >
               Contact Me

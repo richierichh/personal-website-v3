@@ -3,7 +3,7 @@ import Introduction from '@/components/Introduction';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
-import Resume from '@/components/Resume';
+import Education from '@/components/Education';
 import Projects from '@/components/Projects';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -18,7 +18,7 @@ const Index = () => {
         <Experience />
         <Projects />
         {/* <Skills /> */}
-        <Resume />
+        <Education />
       </main>
       
       <footer className="py-16 section-padding border-t border-gray-200 dark:border-gray-800">
