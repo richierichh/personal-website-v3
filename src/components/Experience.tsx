@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Product Management Intern",
       company: "Simplii Financial - CIBC",
       location: "Toronto, ON",
-      period: "January 2026 - April 2026",
+      period: "January 2026 - Current",
       website: "https://www.simplii.com",
       description: "",
       responsibilities: [
