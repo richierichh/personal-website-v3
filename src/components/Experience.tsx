@@ -4,7 +4,7 @@ import React from 'react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Product Management Intern",
+      title: "Product Management",
       company: "Simplii Financial - CIBC",
       location: "Toronto, ON",
       period: "January 2026 - Current",
